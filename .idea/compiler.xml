@@ -23,10 +23,12 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="CH01-SWT-Shell" />
+        <module name="CH02-SWT-Menu" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="CH01-SWT-Shell" target="1.5" />
+      <module name="CH02-SWT-Menu" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
