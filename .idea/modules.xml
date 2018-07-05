@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CH01-SWT-Shell/CH01-SWT-Shell.iml" filepath="$PROJECT_DIR$/CH01-SWT-Shell/CH01-SWT-Shell.iml" />
       <module fileurl="file://$PROJECT_DIR$/CH02-SWT-Menu/CH02-SWT-Menu.iml" filepath="$PROJECT_DIR$/CH02-SWT-Menu/CH02-SWT-Menu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CH03-SWT-Toolbar/CH03-SWT-Toolbar.iml" filepath="$PROJECT_DIR$/CH03-SWT-Toolbar/CH03-SWT-Toolbar.iml" />
       <module fileurl="file://$PROJECT_DIR$/SWT.iml" filepath="$PROJECT_DIR$/SWT.iml" />
     </modules>
   </component>
