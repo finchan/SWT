@@ -8,6 +8,7 @@
       <list>
         <option value="$PROJECT_DIR$/CH01-SWT-Shell/pom.xml" />
         <option value="$PROJECT_DIR$/CH02-SWT-Menu/pom.xml" />
+        <option value="$PROJECT_DIR$/CH03-SWT-Toolbar/pom.xml" />
       </list>
     </option>
   </component>
