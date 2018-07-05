@@ -11,7 +11,7 @@ import org.eclipse.swt.widgets.Shell;
  * Created by Xavier on 2018/7/4.
  */
 public class DialogExample  extends Dialog {
-    DialogExample(Shell parent) {
+    public DialogExample(Shell parent) {
         super(parent);
     }
 
