@@ -17,7 +17,7 @@ import org.eclipse.swt.widgets.Shell;
 public class MenuShell {
     Display d;
     Shell s;
-    MenuShell() {
+    public MenuShell() {
         d = new Display();
         s = new Shell(d);
         s.setSize(500,500);
@@ -226,7 +226,7 @@ public class MenuShell {
         d.dispose();
     }
 
-    private Menu createEditPopupMenu() {
+    public Menu createEditPopupMenu() {
         final Menu p = new Menu(s, SWT.POP_UP);
         final MenuItem cutMenuItem = new MenuItem(p, SWT.PUSH);
         cutMenuItem.setText("Cut");
