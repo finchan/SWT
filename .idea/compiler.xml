@@ -27,6 +27,7 @@
         <module name="CH03-SWT-Toolbar" />
         <module name="CH04-SWT-Text" />
         <module name="CH05-SWT-Button" />
+        <module name="CH06-SWT-List" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -35,6 +36,7 @@
       <module name="CH03-SWT-Toolbar" target="1.5" />
       <module name="CH04-SWT-Text" target="1.5" />
       <module name="CH05-SWT-Button" target="1.5" />
+      <module name="CH06-SWT-List" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
