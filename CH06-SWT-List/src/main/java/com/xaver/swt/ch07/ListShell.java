@@ -17,7 +17,7 @@ public class ListShell {
     public ListShell(){
         s.setSize(500,500);
         s.setImage(new Image(d, this.getClass().getResourceAsStream(("/images/bean.ico"))));
-        s.setText("A Button Example");
+        s.setText("A List Example");
         /*******************
          *  List Shell Begin
          *******************/
