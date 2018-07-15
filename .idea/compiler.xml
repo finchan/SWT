@@ -30,6 +30,7 @@
         <module name="CH06-SWT-List" />
         <module name="CH07-SWT-Combo" />
         <module name="CH08-SWT-Layout" />
+        <module name="CH09-SWT-Composite-Group" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -41,6 +42,7 @@
       <module name="CH06-SWT-List" target="1.5" />
       <module name="CH07-SWT-Combo" target="1.5" />
       <module name="CH08-SWT-Layout" target="1.5" />
+      <module name="CH09-SWT-Composite-Group" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

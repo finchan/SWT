@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/CH06-SWT-List/CH06-SWT-List.iml" filepath="$PROJECT_DIR$/CH06-SWT-List/CH06-SWT-List.iml" />
       <module fileurl="file://$PROJECT_DIR$/CH07-SWT-Combo/CH07-SWT-Combo.iml" filepath="$PROJECT_DIR$/CH07-SWT-Combo/CH07-SWT-Combo.iml" />
       <module fileurl="file://$PROJECT_DIR$/CH08-SWT-Layout/CH08-SWT-Layout.iml" filepath="$PROJECT_DIR$/CH08-SWT-Layout/CH08-SWT-Layout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CH09-SWT-Composite-Group/CH09-SWT-Composite-Group.iml" filepath="$PROJECT_DIR$/CH09-SWT-Composite-Group/CH09-SWT-Composite-Group.iml" />
       <module fileurl="file://$PROJECT_DIR$/SWT.iml" filepath="$PROJECT_DIR$/SWT.iml" />
     </modules>
   </component>

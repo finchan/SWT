@@ -1,0 +1,60 @@
+package com.xavier.swt.com.xavier.swt.complex;
+
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.graphics.Image;
+import org.eclipse.swt.layout.FillLayout;
+import org.eclipse.swt.layout.GridData;
+import org.eclipse.swt.layout.GridLayout;
+import org.eclipse.swt.layout.RowLayout;
+import org.eclipse.swt.widgets.Button;
+import org.eclipse.swt.widgets.Composite;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Shell;
+
+/**
+ * Created by Xavier on 2018-07-15.
+ */
+public class ComplextShellExample2 {
+    Display d = new Display();
+    Shell s = new Shell(d);
+    public ComplextShellExample2(){
+        s.setSize(500,500);
+        s.setImage(new Image(d, this.getClass().getResourceAsStream(("/images/bean.ico"))));
+        s.setText("A Complex Shell Example");
+
+        GridLayout layout = new GridLayout();
+        layout.numColumns = 4;
+        s.setLayout(layout);
+
+        GridComposite gc = new GridComposite(s, SWT.BORDER);
+        GridData gd = new GridData(GridData.FILL_BOTH);
+        gd.horizontalSpan = 4;
+        gc.setLayoutData(gd);
+
+        Composite c1 = new Composite(s, SWT.NO_FOCUS);
+        gd = new GridData(GridData.FILL_HORIZONTAL);
+        gd.horizontalSpan = 4;
+        gd.heightHint = 10;
+        c1.setLayoutData(gd);
+
+        Composite c = new Composite(s, SWT.NO_FOCUS|SWT.BORDER);
+        RowLayout rLayout = new RowLayout();
+        rLayout.pack = false;
+        c.setLayout(rLayout);
+        final Button okBtn = new Button(c, SWT.PUSH);
+        final Button cancelBtn = new Button(c, SWT.PUSH);
+        okBtn.setText("OK");
+        cancelBtn.setText("Cancel");
+        gd = new GridData(GridData.FILL_HORIZONTAL);
+        gd.horizontalSpan = 4;
+        gd.horizontalAlignment = SWT.CENTER;
+        c.setLayoutData(gd);
+
+        s.open();
+        while(!s.isDisposed()){
+            if(!d.readAndDispatch())
+                d.sleep();
+        }
+        d.dispose();
+    }
+}
