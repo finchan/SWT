@@ -1,24 +1,34 @@
 package com.xavier.swt.ch12;
 
 import org.eclipse.swt.SWT;
+import org.eclipse.swt.events.SelectionAdapter;
+import org.eclipse.swt.events.SelectionEvent;
+import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.layout.FillLayout;
+import org.eclipse.swt.layout.GridData;
+import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.*;
 
 /**
- * Created by Xavier on 2018/7/16.
+ * Created by Xavier on 2018/7/17.
  */
-public class TableShellExample {
+public class SearchableTableExample {
     Display d = new Display();
     Shell s = new Shell(d);
-    public TableShellExample(){
+    public SearchableTableExample(){
         s.setSize(500,500);
         s.setImage(new Image(d, this.getClass().getResourceAsStream(("/images/bean.ico"))));
         s.setText("A Button Example");
         s.setLayout(new FillLayout());
+        GridLayout layout = new GridLayout();
+        layout.numColumns = 2;
+        s.setLayout(layout);
 
-        Table t = new Table(s, SWT.BORDER|SWT.FULL_SELECTION|SWT.MULTI);
-
+        GridData gridData = new GridData(GridData.FILL_BOTH);
+        gridData.horizontalSpan = 2;
+        final Table t = new Table(s, SWT.BORDER);
+        t.setLayoutData(gridData);
         TableColumn tc1 = new TableColumn(t, SWT.CENTER);
         TableColumn tc2 = new TableColumn(t, SWT.CENTER);
         TableColumn tc3 = new TableColumn(t, SWT.CENTER);
@@ -38,12 +48,22 @@ public class TableShellExample {
         TableItem item3 = new TableItem(t, SWT.NONE);
         item3.setText(new String[] {"Resse", "Miller", "Ohio"});
 
-        t.setSelection(0);
-        TableItem [] items = t.getSelection();
-        int indices [] = t.getSelectionIndices();
-        int selected = t.getSelectionIndex();
+        final Text searchText = new Text(s, SWT.BORDER);
+        final Button btn = new Button(s, SWT.NONE);
+        btn.setText("SEARCH");
 
-        t.setSelection(0);
+        btn.addSelectionListener(new SelectionAdapter() {
+            @Override
+            public void widgetSelected(SelectionEvent selectionEvent) {
+                TableItem [] items = t.getItems();
+                for(TableItem item : items) {
+                    item.setBackground(Display.getCurrent().getSystemColor(SWT.TRANSPARENCY_ALPHA));
+                    if(item.getText(2).equals(searchText.getText())){
+                        item.setBackground(2, new Color(d, 175,255, 64));
+                    }
+                }
+            }
+        });
 
         s.open();
         while(!s.isDisposed()){
