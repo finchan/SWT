@@ -1,23 +1,22 @@
 package com.xavier.swt.ch12;
 
 import org.eclipse.swt.SWT;
+import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.layout.FillLayout;
 import org.eclipse.swt.widgets.*;
 
-/**
- * Created by Xavier on 2018/7/16.
- */
-public class TableShellExample {
+
+public class CheckedTableShellExample {
     Display d = new Display();
     Shell s = new Shell(d);
-    public TableShellExample(){
+    public CheckedTableShellExample(){
         s.setSize(500,500);
         s.setImage(new Image(d, this.getClass().getResourceAsStream(("/images/bean.ico"))));
         s.setText("A Button Example");
         s.setLayout(new FillLayout());
 
-        Table t = new Table(s, SWT.BORDER|SWT.FULL_SELECTION|SWT.MULTI);
+        Table t = new Table(s, SWT.BORDER|SWT.CHECK|SWT.FULL_SELECTION);
 
         TableColumn tc1 = new TableColumn(t, SWT.CENTER);
         TableColumn tc2 = new TableColumn(t, SWT.CENTER);
@@ -38,12 +37,16 @@ public class TableShellExample {
         TableItem item3 = new TableItem(t, SWT.NONE);
         item3.setText(new String[] {"Resse", "Miller", "Ohio"});
 
-        t.setSelection(0);
-        TableItem [] items = t.getSelection();
-        int indices [] = t.getSelectionIndices();
-        int selected = t.getSelectionIndex();
+        item1.setChecked(true);
+        boolean item1Checked = item1.getChecked();
+        System.out.println(item1Checked);
 
-        t.setSelection(0);
+        TableItem [] items = t.getItems();
+        for(TableItem item : items) {
+            if(item.getText(2).equals("Ohio")){
+                item.setBackground(new Color(d, 175,255, 64));
+            }
+        }
 
         s.open();
         while(!s.isDisposed()){
