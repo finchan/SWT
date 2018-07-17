@@ -33,6 +33,7 @@
         <module name="CH09-SWT-Composite-Group" />
         <module name="CH10-SWT-Tab" />
         <module name="CH11-SWT-Table" />
+        <module name="CH12-SWT-Tree" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -47,6 +48,7 @@
       <module name="CH09-SWT-Composite-Group" target="1.5" />
       <module name="CH10-SWT-Tab" target="1.5" />
       <module name="CH11-SWT-Table" target="1.5" />
+      <module name="CH12-SWT-Tree" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
