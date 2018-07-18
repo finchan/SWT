@@ -1,27 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <resourceExtensions />
-    <wildcardResourcePatterns>
-      <entry name="!?*.java" />
-      <entry name="!?*.form" />
-      <entry name="!?*.class" />
-      <entry name="!?*.groovy" />
-      <entry name="!?*.scala" />
-      <entry name="!?*.flex" />
-      <entry name="!?*.kt" />
-      <entry name="!?*.clj" />
-      <entry name="!?*.aj" />
-    </wildcardResourcePatterns>
     <annotationProcessing>
-      <profile default="true" name="Default" enabled="false">
-        <processorPath useClasspath="true" />
-      </profile>
-      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+      <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
         <module name="CH01-SWT-Shell" />
         <module name="CH02-SWT-Menu" />
         <module name="CH03-SWT-Toolbar" />
@@ -34,6 +18,7 @@
         <module name="CH10-SWT-Tab" />
         <module name="CH11-SWT-Table" />
         <module name="CH12-SWT-Tree" />
+        <module name="CH13-SWT-Listener" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -49,6 +34,7 @@
       <module name="CH10-SWT-Tab" target="1.5" />
       <module name="CH11-SWT-Table" target="1.5" />
       <module name="CH12-SWT-Tree" target="1.5" />
+      <module name="CH13-SWT-Listener" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
