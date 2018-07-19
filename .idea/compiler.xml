@@ -19,6 +19,9 @@
         <module name="CH11-SWT-Table" />
         <module name="CH12-SWT-Tree" />
         <module name="CH13-SWT-Listener" />
+        <module name="CH14-SWT-Coolbar" />
+        <module name="CH15-SWT-Slider" />
+        <module name="CH16-SWT-ProgressBar" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -35,6 +38,9 @@
       <module name="CH11-SWT-Table" target="1.5" />
       <module name="CH12-SWT-Tree" target="1.5" />
       <module name="CH13-SWT-Listener" target="1.5" />
+      <module name="CH14-SWT-Coolbar" target="1.5" />
+      <module name="CH15-SWT-Slider" target="1.5" />
+      <module name="CH16-SWT-ProgressBar" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

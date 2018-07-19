@@ -15,6 +15,9 @@
       <module fileurl="file://$PROJECT_DIR$/CH11-SWT-Table/CH11-SWT-Table.iml" filepath="$PROJECT_DIR$/CH11-SWT-Table/CH11-SWT-Table.iml" />
       <module fileurl="file://$PROJECT_DIR$/CH12-SWT-Tree/CH12-SWT-Tree.iml" filepath="$PROJECT_DIR$/CH12-SWT-Tree/CH12-SWT-Tree.iml" />
       <module fileurl="file://$PROJECT_DIR$/CH13-SWT-Listener/CH13-SWT-Listener.iml" filepath="$PROJECT_DIR$/CH13-SWT-Listener/CH13-SWT-Listener.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CH14-SWT-Coolbar/CH14-SWT-Coolbar.iml" filepath="$PROJECT_DIR$/CH14-SWT-Coolbar/CH14-SWT-Coolbar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CH15-SWT-Slider/CH15-SWT-Slider.iml" filepath="$PROJECT_DIR$/CH15-SWT-Slider/CH15-SWT-Slider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CH16-SWT-ProgressBar/CH16-SWT-ProgressBar.iml" filepath="$PROJECT_DIR$/CH16-SWT-ProgressBar/CH16-SWT-ProgressBar.iml" />
       <module fileurl="file://$PROJECT_DIR$/SWT.iml" filepath="$PROJECT_DIR$/SWT.iml" />
     </modules>
   </component>
