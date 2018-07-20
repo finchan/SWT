@@ -18,6 +18,7 @@
       <module fileurl="file://$PROJECT_DIR$/CH14-SWT-Coolbar/CH14-SWT-Coolbar.iml" filepath="$PROJECT_DIR$/CH14-SWT-Coolbar/CH14-SWT-Coolbar.iml" />
       <module fileurl="file://$PROJECT_DIR$/CH15-SWT-Slider/CH15-SWT-Slider.iml" filepath="$PROJECT_DIR$/CH15-SWT-Slider/CH15-SWT-Slider.iml" />
       <module fileurl="file://$PROJECT_DIR$/CH16-SWT-ProgressBar/CH16-SWT-ProgressBar.iml" filepath="$PROJECT_DIR$/CH16-SWT-ProgressBar/CH16-SWT-ProgressBar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CH17-SWT-Dialog/CH17-SWT-Dialog.iml" filepath="$PROJECT_DIR$/CH17-SWT-Dialog/CH17-SWT-Dialog.iml" />
       <module fileurl="file://$PROJECT_DIR$/SWT.iml" filepath="$PROJECT_DIR$/SWT.iml" />
     </modules>
   </component>
