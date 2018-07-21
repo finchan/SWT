@@ -23,6 +23,7 @@
         <module name="CH15-SWT-Slider" />
         <module name="CH16-SWT-ProgressBar" />
         <module name="CH17-SWT-Dialog" />
+        <module name="CH18-SWT-Application" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -43,6 +44,7 @@
       <module name="CH15-SWT-Slider" target="1.5" />
       <module name="CH16-SWT-ProgressBar" target="1.5" />
       <module name="CH17-SWT-Dialog" target="1.5" />
+      <module name="CH18-SWT-Application" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
